@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Ham & Egg Sandwhich",
+    "meal_type": "Breakfast",
+    "macronutrients": {
+      "fat": 20,
+      "protein": 12,
+      "carbs": 25
+    },
+    "ingredients": ["2 Eggs, 3 Slices of Ham, 1 Slice of Bread"]
+  },
+  {
+    "name": "Chicken & Brown Rice",
+    "meal_type": "Lunch",
+    "macronutrients": {
+      "fat": 13,
+      "protein": 25,
+      "carbs": 32
+    },
+    "ingredients": ["1 Chicken Breast, 1.5 Cups of Brown Rice"]
+  }
+]
