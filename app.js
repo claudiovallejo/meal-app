@@ -21,4 +21,26 @@ if ($refresh){
     console.log("REFRESH");
   });
 }
-//  Card Logic
+//  Fetch meal JSON data
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "https://raw.githubusercontent.com/claudiovallejo/meal-app/master/meals.json");
+oReq.send();
+//  Assign data to meals variable
+
+function reqListener() {
+  var meals = JSON.parse(this.responseText);
+  fetchHTML(meals);
+}
+//
+var $main = document.getElementsByClassName('js-main')[0];
+//
+function fetchHTML(data) {
+  for (var i = 0; i < data.length; i++) {
+    const $article = document.createElement('article');
+    $article.setAttribute('class', 'js-card function-eio duration0_5 property-all o0 transform-tYm1_5 pa1_5 bg-white');
+    if (i != data.length) {
+      $article.classList += "mb1"
+    }
+  }
+}
