@@ -2,7 +2,7 @@
 html { -webkit-font-smoothing: antialiased; }
 /* Typography */
 /* Font Family */
-.roboto { font-family: "Roboto"; }
+.roboto { font-family: "Roboto", sans-serif; }
 /* Font Weights */
 .fw4 { font-weight: 400; }
 .fw5 { font-weight: 500; }
