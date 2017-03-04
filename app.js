@@ -21,3 +21,4 @@ if ($refresh){
     console.log("REFRESH");
   });
 }
+//  Card Logic
