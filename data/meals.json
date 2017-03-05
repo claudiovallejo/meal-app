@@ -40,20 +40,6 @@
     ]
   },
   {
-    "name": "Yogurt and Wine",
-    "type": "Snack",
-    "macros": {
-      "fat": 0.2,
-      "protein": 13.3,
-      "carbs": 12.14
-    },
-    "ingredients": [
-      "125g of Greek Yogurt",
-      "28g of Rasperries",
-      "1 Glass of Wine"
-    ]
-  },
-  {
     "name": "Cottage Cheese Toast",
     "type": "Breakfast",
     "macros": {
@@ -187,6 +173,20 @@
       "1/8 of Avocado",
       "9oz of Ham",
       "1 pack of Salmas"
+    ]
+  },
+  {
+    "name": "Yogurt and Wine",
+    "type": "Late Snack",
+    "macros": {
+      "fat": 0.2,
+      "protein": 13.3,
+      "carbs": 12.14
+    },
+    "ingredients": [
+      "125g of Greek Yogurt",
+      "28g of Rasperries",
+      "1 Glass of Wine"
     ]
   }
 ]
