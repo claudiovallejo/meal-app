@@ -11,7 +11,7 @@
   //  Fetch meal JSON data
   var oReq = new XMLHttpRequest();
   oReq.addEventListener("load", reqListener);
-  oReq.open("GET", "https://raw.githubusercontent.com/claudiovallejo/meal-app/master/meals.json");
+  oReq.open("GET", "https://raw.githubusercontent.com/claudiovallejo/meal-app/master/data/meals.json");
   oReq.send();
 
   //  Meal Plan Arrays
