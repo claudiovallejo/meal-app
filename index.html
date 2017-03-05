@@ -11,42 +11,43 @@
   </head>
   <body class="bg-silver">
     <!-- Navigation -->
-    <nav class="js-header fixed top-0 w-100 cf bg-blue pt2 ph1 pb1 mb1">
-      <h1 class="js-total fl ma0 roboto fw5 f1_5 white">1,980 Calories</h1>
-      <img class="js-refresh fr" style="padding-top: 5px;" src="./images/refresh.svg" />
+    <nav class="js-header cf bg-blue pt2 ph1 pb1 mb1">
+      <h1 data-app="total" class="js-total fl ma0 roboto fw5 f1_5 white"></h1>
+      <img data-app="refresh" class="js-refresh fr" style="padding-top: 5px;" src="./images/refresh.svg" />
     </nav>
     <!-- Content -->
-    <main class="js-container ph1" style="padding-top: 88px;">
+    <main data-meal="container" class="js-container ph1">
       <!-- Meal Sample -->
-      <article class="js-template pa1_5 bg-white mb1">
+      <article data-meal="template" class="js-template pa1_5 bg-white mb1">
         <header>
           <div class="cf mb0_25">
-            <h3 class="js-name fl ma0 roboto fw4 f1 black"><!-- meal.name --></h3>
-            <h3 class="js-total fr ma0 roboto fw7 f1 green"><!-- Total Calories --></h3>
+            <h3 data-meal="name" class="js-name fl ma0 roboto fw4 f1 black"></h3>
+            <h3 data-meal="total" class="js-total fr ma0 roboto fw7 f1 green"></h3>
           </div>
           <div class="cf">
-            <h4 class="js-type fl ma0 roboto fw4 f0_75 dark-gray"><!-- meal.type --></h4>
-            <h4 class="js-value fr ma0 roboto fw4 f0_75 dark-gray"><!-- % Daily Value --></h4>
+            <h4 data-meal="type" class="js-type fl ma0 roboto fw4 f0_75 dark-gray"></h4>
+            <h4 data-meal="value" class="js-value fr ma0 roboto fw4 f0_75 dark-gray"></h4>
           </div>
         </header>
         <div class="cf pv1_5">
           <div class="fl w-33 cf">
-            <h1 class="js-protein ma0 roboto fw7 f2 black"><!-- meal.macros.protein --><span class="f1">g</span></h1>
+            <h1 data-meal="protein" class="js-protein ma0 roboto fw7 f2 black"><span class="f1">g</span></h1>
             <h4 class="ma0 roboto fw4 f0_75">Protein</h4>
           </div>
           <div class="fl w-33 cf">
-            <h1 class="js-carbs ma0 roboto fw7 f2 black"><!-- meal.macros.carbs --><span class="f1">g</span></h1>
+            <h1 data-meal="carbs" class="js-carbs ma0 roboto fw7 f2 black"><span class="f1">g</span></h1>
             <h4 class="ma0 roboto fw4 f0_75">Carbs</h4>
           </div>
           <div class="fl w-33 cf">
-            <h1 class="js-fat ma0 roboto fw7 f2"><!-- meal.macros.fat --><span class="f1">g</span></h1>
+            <h1 data-meal="fat" class="js-fat ma0 roboto fw7 f2"><span class="f1">g</span></h1>
             <h4 class="ma0 roboto fw4 f0_75">Fat</h4>
           </div>
         </div>
         <h4 class="ma0 mb0_25 roboto fw4 f1 black">Ingredients</h4>
-        <p class="js-ingredients ma0 roboto fw4 f1 dark-gray"><!-- meal.ingredients --></p>
+        <p data-meal="ingredients" class="js-ingredients ma0 roboto fw4 f1 dark-gray"></p>
       </article>
     </main>
-    <script type="text/javascript" src="./scripts/app.js"></script>
+    <!-- <script type="text/javascript" src="./scripts/app.js"></script> -->
+    <script type="text/javascript" src="./scripts/site.js"></script>
   </body>
 </html>
