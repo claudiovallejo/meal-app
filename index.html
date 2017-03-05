@@ -7,80 +7,44 @@
     <title>Today's Meal Plan</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="tachyons.css">
-    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
   </head>
   <body class="bg-silver">
     <!-- Navigation -->
-    <div class="bg-gray">
-      <div>
-        <!-- Calories -->
-      </div>
-      <div>
-        
-      </div>
-    </div>
-    <nav class="cf bg-blue pt2 ph1 pb1 mb1">
-      <h1 class="fl ma0 roboto fw5 f1_5 white">1,980 Calories</h1>
-      <img class="js-refresh fr" style="padding-top: 5px;" src="refresh.svg">
+    <nav class="js-header fixed top-0 w-100 cf bg-blue pt2 ph1 pb1 mb1">
+      <h1 class="js-total fl ma0 roboto fw5 f1_5 white">1,980 Calories</h1>
+      <img class="js-refresh fr" style="padding-top: 5px;" src="refresh.svg" />
     </nav>
     <!-- Content -->
-    <main class="js-main ph1">
+    <main class="js-container ph1" style="padding-top: 88px;">
       <!-- Meal Sample -->
-      <article class="js-card function-eio duration0_5 property-all o0 transform-tYm1_5 pa1_5 bg-white mb1">
+      <article class="js-template pa1_5 bg-white mb1">
         <header>
           <div class="cf mb0_25">
-            <h3 class="fl ma0 roboto fw4 f1 black">Ham &amp; Egg Sandwhich</h3>
-            <h3 class="fr ma0 roboto fw7 f1 green">534 Cal</h3>
+            <h3 class="js-name fl ma0 roboto fw4 f1 black"><!-- meal.name --></h3>
+            <h3 class="js-total fr ma0 roboto fw7 f1 green"><!-- Total Calories --></h3>
           </div>
           <div class="cf">
-            <h4 class="fl ma0 roboto fw4 f0_75 dark-gray">Meal #1, Breakfast</h4>
-            <h4 class="fr ma0 roboto fw4 f0_75 dark-gray">12% Daily Intake</h4>
+            <h4 class="js-type fl ma0 roboto fw4 f0_75 dark-gray"><!-- meal.type --></h4>
+            <h4 class="js-value fr ma0 roboto fw4 f0_75 dark-gray"><!-- % Daily Value --></h4>
           </div>
         </header>
         <div class="cf pv1_5">
           <div class="fl w-33 cf">
-            <h1 class="ma0 roboto fw7 f2 black">20<span class="f1">g</span></h1>
-            <h4 class="ma0 roboto fw4 f0_75">Fats</h4>
-          </div>
-          <div class="fl w-33 cf">
-            <h1 class="ma0 roboto fw7 f2 black">20<span class="f1">g</span></h1>
+            <h1 class="js-protein ma0 roboto fw7 f2 black"><!-- meal.macros.protein --><span class="f1">g</span></h1>
             <h4 class="ma0 roboto fw4 f0_75">Protein</h4>
           </div>
           <div class="fl w-33 cf">
-            <h1 class="ma0 roboto fw7 f2">20<span class="f1">g</span></h1>
+            <h1 class="js-carbs ma0 roboto fw7 f2 black"><!-- meal.macros.carbs --><span class="f1">g</span></h1>
             <h4 class="ma0 roboto fw4 f0_75">Carbs</h4>
+          </div>
+          <div class="fl w-33 cf">
+            <h1 class="js-fat ma0 roboto fw7 f2"><!-- meal.macros.fat --><span class="f1">g</span></h1>
+            <h4 class="ma0 roboto fw4 f0_75">Fat</h4>
           </div>
         </div>
         <h4 class="ma0 mb0_25 roboto fw4 f1 black">Ingredients</h4>
-        <p class="ma0 roboto fw4 f1 dark-gray">2 Eggs, 3 Slices of Ham, 1 Slice of Bread</p>
-      </article>
-      <article class="js-card function-eio duration0_5 property-all o0 transform-tYm1_5 pa1_5 bg-white">
-        <header>
-          <div class="cf mb0_25">
-            <h3 class="fl ma0 roboto fw4 f1 black">Ham &amp; Egg Sandwhich</h3>
-            <h3 class="fr ma0 roboto fw7 f1 green">534 Cal</h3>
-          </div>
-          <div class="cf">
-            <h4 class="fl ma0 roboto fw4 f0_75 dark-gray">Meal #1, Breakfast</h4>
-            <h4 class="fr ma0 roboto fw4 f0_75 dark-gray">12% Daily Intake</h4>
-          </div>
-        </header>
-        <div class="cf pv1_5">
-          <div class="fl w-33 cf">
-            <h1 class="ma0 roboto fw7 f2 black">20<span class="f1">g</span></h1>
-            <h4 class="ma0 roboto fw4 f0_75">Fats</h4>
-          </div>
-          <div class="fl w-33 cf">
-            <h1 class="ma0 roboto fw7 f2 black">20<span class="f1">g</span></h1>
-            <h4 class="ma0 roboto fw4 f0_75">Protein</h4>
-          </div>
-          <div class="fl w-33 cf">
-            <h1 class="ma0 roboto fw7 f2">20<span class="f1">g</span></h1>
-            <h4 class="ma0 roboto fw4 f0_75">Carbs</h4>
-          </div>
-        </div>
-        <h4 class="ma0 mb0_25 roboto fw4 f1 black">Ingredients</h4>
-        <p class="ma0 roboto fw4 f1 dark-gray">2 Eggs, 3 Slices of Ham, 1 Slice of Bread</p>
+        <p class="js-ingredients ma0 roboto fw4 f1 dark-gray"><!-- meal.ingredients --></p>
       </article>
     </main>
     <script type="text/javascript" src="app.js"></script>
