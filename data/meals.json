@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Apples & Yogurt",
+    "type": "Snack",
+    "macros": {
+      "fat": 0.2,
+      "protein": 13.2,
+      "carbs": 19.8
+    },
+    "ingredients": [
+      "125g of Greek Yogurt",
+      "1 Apple"
+    ]
+  },
+  {
+    "name": "Protein Shake",
+    "type": "Snack",
+    "macros": {
+      "fat": 4.0,
+      "protein": 25.0,
+      "carbs": 5.0
+    },
+    "ingredients": [
+      "33g Whey Protein",
+      "1 Cup of Almond Milk"
+    ]
+  },
+  {
+    "name": "Yogurt Mix",
+    "type": "Snack",
+    "macros": {
+      "fat": 6.2,
+      "protein": 15.75,
+      "carbs": 10.6
+    },
+    "ingredients": [
+      "125g of Greek Yogurt",
+      "10 Almonds",
+      "28g of Raspberries"
+    ]
+  },
+  {
+    "name": "Yogurt and Wine",
+    "type": "Snack",
+    "macros": {
+      "fat": 0.2,
+      "protein": 13.3,
+      "carbs": 12.14
+    },
+    "ingredients": [
+      "125g of Greek Yogurt",
+      "28g of Rasperries",
+      "1 Glass of Wine"
+    ]
+  },
+  {
+    "name": "Cottage Cheese Toast",
+    "type": "Breakfast",
+    "macros": {
+      "fat": 12.725,
+      "protein": 33.05,
+      "carbs": 27.50
+    },
+    "ingredients": [
+      "1 Cup of Café Au Lait",
+      "1 Slice of Ezekiel",
+      "100g of Cottage Cheese",
+      "125g of Greek Yogurt",
+      "10 Almonds",
+      "1/8 of Avocado"
+    ]
+  },
+  {
+    "name": "Ham and Egg Toast",
+    "type": "Breakfast",
+    "macros": {
+      "fat": 16.625,
+      "protein": 37.50,
+      "carbs": 20.0
+    },
+    "ingredients": [
+      "1 Cup of Café Au Lait",
+      "1 Slice of Ezekiel",
+      "2 Eggs",
+      "1/8 of Avocado",
+      "18oz of Ham"
+    ]
+  },
+  {
+    "name": "Banana Pancakes",
+    "type": "Breakfast",
+    "macros": {
+      "fat": 15.50,
+      "protein": 34.00,
+      "carbs": 21.00
+    },
+    "ingredients": [
+      "1 Cup of Café Au Lait",
+      "1 Slice of Ezekiel",
+      "1 Tbsp of Peanut Butter",
+      "17g of Strawberry Jam",
+      "1 Cup of Almond Milk",
+      "33g of Whey Protein"
+    ]
+  },
+  {
+    "name": "Chicken and Rice",
+    "type": "Lunch",
+    "macros": {
+      "fat": 8.825,
+      "protein": 46.00,
+      "carbs": 24.00
+    },
+    "ingredients": [
+      "1/2 Cup of Rice",
+      "100g of Chicken",
+      "1/8 of Avocado"
+    ]
+  },
+  {
+    "name": "Salmon and Rice",
+    "type": "Lunch",
+    "macros": {
+      "fat": 22.20,
+      "protein": 41.4,
+      "carbs": 22.00
+    },
+    "ingredients": [
+      "1/2 Cup of Rice",
+      "100g of Salmon"
+    ]
+  },
+  {
+    "name": "Chicken Salad",
+    "type": "Dinner",
+    "macros": {
+      "fat": 14.55,
+      "protein": 57.70,
+      "carbs": 11.20
+    },
+    "ingredients": [
+      "2 Cups of Lettuce",
+      "1/4 of Avocado",
+      "100g of Cottage Cheese",
+      "100g of Chicken"
+    ]
+  },
+  {
+    "name": "Ham Tostadas",
+    "type": "Dinner",
+    "macros": {
+      "fat": 10.35,
+      "protein": 24.10,
+      "carbs": 15.20
+    },
+    "ingredients": [
+      "9oz of Ham",
+      "1/4 of Avocado",
+      "100g of Cottage Cheese",
+      "1 pack of Salmas"
+    ]
+  },
+  {
+    "name": "Tuna Tostadas",
+    "type": "Dinner",
+    "macros": {
+      "fat": 12.875,
+      "protein": 32.50,
+      "carbs": 15.00
+    },
+    "ingredients": [
+      "2 packs of Tuna",
+      "3/8 of Avocado",
+      "1 pack of Salmas"
+    ]
+  },
+  {
+    "name": "Eggs w/ Spinach and Ham",
+    "type": "Dinner",
+    "macros": {
+      "fat": 14.625,
+      "protein": 22.50,
+      "carbs": 4.00
+    },
+    "ingredients": [
+      "2 Eggs",
+      "1/8 of Avocado",
+      "9oz of Ham",
+      "1 pack of Salmas"
+    ]
+  }
+]
