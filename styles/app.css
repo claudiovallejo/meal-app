@@ -14,7 +14,7 @@ html { -webkit-font-smoothing: antialiased; }
 .f1_5 { font-size: 1.5rem; }
 .f2 { font-size: 2rem; }
 /* Line Height */
-.lh1_15 { line-height: 1.15; }
+.lh1_25 { line-height: 1.25; }
 /* Colors */
 .black { color: #000000; }
 .dark-gray { color: #828282; }
@@ -62,6 +62,7 @@ html { -webkit-font-smoothing: antialiased; }
 .mt1_5 { margin-top: 1.5rem; }
 .mt2 { margin-top: 2rem; }
 .mt4 { margin-top: 4rem; }
+.mt88x { margin-top: 88px; }
 /* Right Margins */
 .mra { margin-right: auto; }
 .mr0 { margin-right: 0; }
@@ -125,6 +126,7 @@ html { -webkit-font-smoothing: antialiased; }
 .pt1_5 { padding-top: 1.5rem; }
 .pt2 { padding-top: 2rem; }
 .pt4 { padding-top: 4rem; }
+.pt5x { padding-top: 5px; }
 /* Right Paddings */
 .pra { padding-right: auto; }
 .pr0 { padding-right: 0; }
@@ -174,5 +176,7 @@ html { -webkit-font-smoothing: antialiased; }
 */
 .transform-tY0 { transform: translateY(0); }
 .transform-tYm1_5 { transform: translateY(1.5rem); }
+.transform-tYm0_5 { transform: translateY(0.5rem); }
+.transform-tYm-0_5 { transform: translateY(-0.5rem); }
 .o0 { opacity: 0; }
 .o1 { opacity: 1; }
