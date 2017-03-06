@@ -27,6 +27,19 @@
 
   //  Refresh Button
   $refreshButton.addEventListener('click', function(){
+    var $meals = $container.children;
+    // for (var i = 0; i < $meals.length; i++) {
+    //   $meals[i].setAttribute('style', `transition-delay: ${i*0.1}s`);
+    //   $meals[i].classList.toggle('transform-tY0');
+    //   $meals[i].classList.toggle('o0');
+    //   $meals[i].classList.toggle('transform-tYm0_5');
+    //   if (i === $meals.length - 1)
+    //     $meals[i].addEventListener('transitionend', function(){
+    //       $container.innerHTML = '';
+    //       mealSelector();
+    //       createMealCards();
+    //     });
+    // }
     $container.innerHTML = '';
     mealSelector();
     createMealCards();
@@ -73,23 +86,30 @@
 
   //  Populate meal cards
   function createMealCards() {
+    //
     var dailyTotal = 0;
+    mealPlan.forEach(function(meal) {
+      dailyTotal += totalCalories(meal.macros);
+    });
+    //
     for (var i = 0; i < mealPlan.length; i++) {
+      //
       var meal = mealPlan[i];
       var $card = $mealTemplate.cloneNode(true);
+      //
+      $card.classList.toggle('o0');
+      $card.setAttribute('style', `transition-delay: ${i*0.1}s`);
       $card.querySelector(`[data-meal="name"]`).textContent = meal.name;
       $card.querySelector(`[data-meal="total"]`).textContent = concat((totalCalories(meal.macros)).toFixed(1), "Cal");
-      $card.querySelector(`[data-meal="type"]`).textContent = meal.type;
+      $card.querySelector(`[data-meal="type"]`).textContent = `Meal #${i+1}, ` + meal.type;
+      $card.querySelector(`[data-meal="value"]`).textContent = Math.floor((totalCalories(meal.macros) / dailyTotal) * 100) + "% DV";
       $card.querySelector(`[data-meal="protein"]`).innerHTML = (meal.macros.protein).toFixed(1) + $span;
       $card.querySelector(`[data-meal="carbs"]`).innerHTML = (meal.macros.carbs).toFixed(1) + $span;
       $card.querySelector(`[data-meal="fat"]`).innerHTML = (meal.macros.fat).toFixed(1) + $span;
       $card.querySelector(`[data-meal="ingredients"]`).textContent = transformList(meal.ingredients);
       //
-      dailyTotal += totalCalories(meal.macros);
-      //
       $container.appendChild($card);
     }
-    //
     $dailyCalories.textContent = concat((numberWithCommas(dailyTotal.toFixed(1))), "Cal");
   }
 
