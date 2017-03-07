@@ -43,17 +43,7 @@ gulp.task('styles', function(){
   .pipe(concat('public/styles/app.css'))
   .pipe(cssmin())
   .pipe(gzip())
-  .pipe(gulp.dest('public/styles/'))
 });
-
-//  Minify all.js
-// gulp.task('scripts', function(){
-//   gulp.src('./scripts/app.js')
-//   .pipe(uglify())
-//   .pipe(gulp.dest('./public/scripts'))
-//   .pipe(gzip())
-//   .pipe(gulp.dest('./public/scripts'))
-// });
 
 //  Generate sitemap
 gulp.task('sitemap', function() {
@@ -74,7 +64,7 @@ gulp.task('clean', function(){
 
 // Run previously `gulp` tasks in sequence
 gulp.task('sequence', function(callback) {
-  runSequence('copy', 'uncss', ['markup', 'styles', 'sitemap'], 'clean');
+  runSequence('copy', 'uncss', 'markup', 'styles', 'sitemap', 'clean');
 });
 
 // Build
