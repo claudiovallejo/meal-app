@@ -1,0 +1,22 @@
+{
+  "name": "meal-app",
+  "version": "1.0.0",
+  "description": "Over the weekend (Fri Mar 3 -> Sun Mar 5) my brother and I worked on a simple site that generates random, daily meal plans. My brother is currently following a specific diet and the diet is composed of a very limited set of foods. My brother came up with the idea of creating a site/app that randomly selected a meal to automate his meal selection process and to make his diet less monotonous.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiovallejo/meal-app.git"
+  },
+  "author": "Claudio Vallejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudiovallejo/meal-app/issues"
+  },
+  "homepage": "https://github.com/claudiovallejo/meal-app#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
