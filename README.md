@@ -5,9 +5,7 @@ This project is currently a simple static site built with HTML/CSS/JS. My brothe
 
 I learned several new things while building the app, and building this app peaked my curiosity to build a more complex app where my brother can add new meals through the app, save favorite meal plans, among other things.
 
----
-
-## Personalizing the App
+# Personalizing the App
 If you're interested in having the app generate random meals based on your diet, follow the next 5 steps—
 
 1. Clone the repository
@@ -23,3 +21,21 @@ If you're interested in having the app generate random meals based on your diet,
 PS — I highly recommend hosting on [Netlify](https://www.netlify.com/). All you have to do is create an account, create a new project, and link the GitHub repo with your Netlify project. The site will automatically update with `git push origin master`.
 
 If you have any questions or suggestions let me know [@claudiovallejop](https://twitter.com/claudiovallejop).
+
+# Sample Meal API
+```json
+{
+  "name": "Banana Pancakes",
+  "type": "Breakfast",
+  "macros": {
+    "fat": 15.50,
+    "protein": 34.00,
+    "carbs": 21.00
+  },
+  "ingredients": [
+    "1 Tbsp of Peanut Butter",
+    "1 Cup of Almond Milk",
+    "33g of Whey Protein"
+  ]
+}
+```
