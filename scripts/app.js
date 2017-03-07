@@ -86,8 +86,6 @@
       var meal = mealPlan[i];
       var $card = $mealTemplate.cloneNode(true);
       //  Populate meal card
-      $card.classList.toggle('o0');
-      $card.setAttribute('style', `transition-delay: ${i*0.1}s`);
       $card.querySelector(`[data-meal="name"]`).textContent = meal.name;
       $card.querySelector(`[data-meal="total"]`).textContent = concat((totalCalories(meal.macros)).toFixed(1), "Cal");
       $card.querySelector(`[data-meal="type"]`).textContent = `Meal #${i+1}, ` + meal.type;
