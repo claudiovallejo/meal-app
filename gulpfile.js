@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    copy = require('gulp-copy'),
     htmlmin = require('gulp-htmlmin'),
     concat = require('gulp-concat'),
     uncss = require('gulp-uncss'),
@@ -9,60 +10,71 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     clean = require('gulp-clean');
 
+//  Copy site content into public
+gulp.task('copy', function() {
+  gulp.src(['images/refresh.svg'])
+    .pipe(gulp.dest('public/images/'))
+  gulp.src(['scripts/app.js'])
+    .pipe(gulp.dest('public/scripts/'))
+  gulp.src(['styles/tachyons.css', 'styles/app.js'])
+    .pipe(gulp.dest('public/styles/'))
+  gulp.src(['index.html'])
+    .pipe(gulp.dest('public/'))
+});
+
 //  Minify .html
 gulp.task('markup', function(){
-  gulp.src('./index.html')
+  gulp.src('public/index.html')
   .pipe(htmlmin())
-  .pipe(gulp.dest('./public'))
+  .pipe(gulp.dest('public/'))
 });
 
 //  Remove unused css from tachyons.css
 gulp.task('uncss', function(){
-  return gulp.src('./styles/tachyons.css')
-    .pipe(uncss({ html: ['./index.html'] }))
+  return gulp.src('public/styles/tachyons.css')
+    .pipe(uncss({ html: ['public/index.html'] }))
     .pipe(cssmin())
-    .pipe(gulp.dest('./public/styles'))
+    .pipe(gulp.dest('public/styles/'))
 });
 
 //  Minify site.css + Gzip site.css
 gulp.task('styles', function(){
-  gulp.src(['./styles/tachyons.css', './styles/app.css'])
-  .pipe(concat('./styles/app.css'))
+  gulp.src(['public/styles/tachyons.css', 'public/styles/app.css'])
+  .pipe(concat('public/styles/app.css'))
   .pipe(cssmin())
-  .pipe(gulp.dest('./public/styles'))
   .pipe(gzip())
-  .pipe(gulp.dest('./public/styles'))
+  .pipe(gulp.dest('public/styles/'))
 });
 
 //  Minify all.js
-gulp.task('scripts', function(){
-  gulp.src('./scripts/app.js')
-  .pipe(uglify())
-  .pipe(gulp.dest('./public/scripts'))
-  .pipe(gzip())
-  .pipe(gulp.dest('./public/scripts'))
-});
+// gulp.task('scripts', function(){
+//   gulp.src('./scripts/app.js')
+//   .pipe(uglify())
+//   .pipe(gulp.dest('./public/scripts'))
+//   .pipe(gzip())
+//   .pipe(gulp.dest('./public/scripts'))
+// });
 
 //  Generate sitemap
 gulp.task('sitemap', function() {
-  gulp.src('./public/*.html', {
+  gulp.src('public/*.html', {
     read: false
   })
   .pipe(sitemap({
     siteUrl: 'http://www.claudiovallejo.mx'
   }))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('public/'));
 });
 
 //  Remove unused files
 gulp.task('clean', function(){
-  gulp.src('./public/styles/tachyons.css', {read: false})
+  gulp.src('public/styles/tachyons.css', {read: false})
   .pipe(clean());
 });
 
 // Run previously `gulp` tasks in sequence
 gulp.task('sequence', function(callback) {
-  runSequence('uncss', ['markup', 'styles', 'scripts', 'sitemap'], 'clean');
+  runSequence('copy', 'uncss', ['markup', 'styles', 'sitemap'], 'clean');
 });
 
 // Build
