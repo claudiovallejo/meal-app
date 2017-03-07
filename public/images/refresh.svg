@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>refresh</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-987 298)" figma:type="canvas">
+<g id="refresh" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Shape" style="mix-blend-mode:normal;isolation:isolate;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(987 -298)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 8 0C 3.6 0 0 3.6 0 8C 0 12.4 3.6 16 8 16C 11.7 16 14.8 13.4 16 10L 14 10C 12.8 12.3 10.6 14 8 14C 4.7 14 2 11.3 2 8C 2 4.7 4.7 2 8 2C 9.7 2 11.1 2.7 12 4L 9 7L 16 7L 16 0L 14 2C 12.2 1 10.2 0 8 0Z"/>
+</defs>
+</svg>
