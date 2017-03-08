@@ -73,6 +73,23 @@
     ]
   },
   {
+    "name": "PB&J Sandwhich",
+    "type": "Breakfast",
+    "macros": {
+      "fat": 14.00,
+      "protein": 33.50,
+      "carbs": 26.80
+    },
+    "ingredients": [
+      "1 Cup of Café Au Lait",
+      "1 Slice of Ezekiel",
+      "1 Tbsp of Peanut Butter",
+      "17g of Strawberry Jam",
+      "1 Cup of Almond Milk",
+      "33g of Whey Protein"
+    ]
+  },
+  {
     "name": "Banana Pancakes",
     "type": "Breakfast",
     "macros": {
@@ -82,11 +99,10 @@
     },
     "ingredients": [
       "1 Cup of Café Au Lait",
-      "1 Slice of Ezekiel",
+      "1 Egg",
       "1 Tbsp of Peanut Butter",
-      "17g of Strawberry Jam",
-      "1 Cup of Almond Milk",
-      "33g of Whey Protein"
+      "33g of Whey Protein",
+      "1/2 Banana"
     ]
   },
   {
