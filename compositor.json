@@ -1,0 +1,99 @@
+{
+  "name": "claudiovallejo/meal-app",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Project Test",
+  "branch": "",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://meals.netlify.com",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/claudiovallejo/meal-app",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/meal-app",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "meal-app",
+      "subhead": "🍎  Meal Plan Generator (Beta)",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "meal-app: 🍎  Meal Plan Generator (Beta)",
+          "url": "https://meals.netlify.com"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "claudiovallejo",
+          "repo": "meal-app"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Meal Plan Generator</h1>\n<p>Over the weekend (Fri Mar 3 -&gt; Sun Mar 5) my brother and I worked on a simple site that generates random, daily meal plans. My brother is currently following a specific diet and the diet is composed of a very limited set of foods. My brother came up with the idea of creating a site/app that randomly selected a meal to automate his meal selection process and to make his diet less monotonous.</p>\n<p>This project is currently a simple static site built with HTML/CSS/JS. My brother&apos;s meal plan is stored in a JSON file that feeds the site&apos;s content. Unfortunately the site doesn&apos;t save any data, so it makes the site quite useless right now. I&apos;ve been doing some research about service workers to store the site&apos;s data on the device, which would make the app useful.</p>\n<p>I learned several new things while building the app, and building this app peaked my curiosity to build a more complex app where my brother can add new meals through the app, save favorite meal plans, among other things.</p>\n<h1>Personalizing the App</h1>\n<p>If you&apos;re interested in having the app generate random meals based on your diet, follow the next 5 steps&#x2014;</p>\n<ol>\n<li><p>Clone the repository</p>\n</li>\n<li><p>Update <code>data/meals.json</code> with your own meals</p>\n</li>\n<li><p>In <code>scripts/app.js</code> update <code>mealTypes</code> and <code>mealGuide</code>. <code>mealTypes</code> is a list of the available meal types. <code>mealGuide</code> defines the order and type of meals the generator creates for your daily meals.</p>\n</li>\n<li><p>Update the <code>XMLHttpRequest().open</code> path in <code>scripts/app.js</code>. I&apos;m currently using GitHub&apos;s raw data file path (you find this path after cloning the project and hosting on your GitHub account, opening the project&apos;s <code>data/meals.json</code> file, and selecting &apos;Raw&apos; next to the &apos;Blame&apos; and &apos;History&apos; buttons.)</p>\n</li>\n<li><p>Publish site</p>\n</li>\n</ol>\n<p>PS &#x2014; I highly recommend hosting on <a href=\"https://www.netlify.com/\">Netlify</a>. All you have to do is create an account, create a new project, and link the GitHub repo with your Netlify project. The site will automatically update with <code>git push origin master</code>.</p>\n<p>If you have any questions or suggestions let me know <a href=\"https://twitter.com/claudiovallejop\">@claudiovallejop</a>.</p>\n<h1>Sample Meal API</h1>\n<pre>{\n  <span class=\"hljs-attr\">&quot;name&quot;</span>: <span class=\"hljs-string\">&quot;Banana Pancakes&quot;</span>,\n  <span class=\"hljs-attr\">&quot;type&quot;</span>: <span class=\"hljs-string\">&quot;Breakfast&quot;</span>,\n  <span class=\"hljs-attr\">&quot;macros&quot;</span>: {\n    <span class=\"hljs-attr\">&quot;fat&quot;</span>: <span class=\"hljs-number\">15.50</span>,\n    <span class=\"hljs-attr\">&quot;protein&quot;</span>: <span class=\"hljs-number\">34.00</span>,\n    <span class=\"hljs-attr\">&quot;carbs&quot;</span>: <span class=\"hljs-number\">21.00</span>\n  },\n  <span class=\"hljs-attr\">&quot;ingredients&quot;</span>: [\n    <span class=\"hljs-string\">&quot;1 Tbsp of Peanut Butter&quot;</span>,\n    <span class=\"hljs-string\">&quot;1 Cup of Almond Milk&quot;</span>,\n    <span class=\"hljs-string\">&quot;33g of Whey Protein&quot;</span>\n  ]\n}</pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/claudiovallejo/meal-app",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/claudiovallejo",
+          "text": "claudiovallejo"
+        }
+      ]
+    }
+  ]
+}
